@@ -1,0 +1,91 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .desktop {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F3F3F3;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .taskbar {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .start-button {
+    flex-grow: 1;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+  }
+  
+  .taskbar-items {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .taskbar-item {
+    flex-grow: 1;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+  }
+  
+  .window {
+    width: 400px;
+    height: 300px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .window-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .window-title {
+    font-weight: bold;
+  }
+  
+  .window-controls {
+    display: flex;
+  }
+  
+  .close-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .window-content {
+    padding: 10px;
+    flex-grow: 1;
+    overflow: auto;
+  }
